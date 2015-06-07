@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="vendor/autoload.php" colors="true">
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
+         backupGlobals="false"
+         colors="true"
+         printerClass="PHPUnit_Util_TestDox_ResultPrinter_Text"                                                                   
+         bootstrap="vendor/autoload.php"
+>
+
     <testsuites>
         <testsuite name="Monolog Test Suite">
             <directory>tests/Monolog/</directory>
